@@ -11,18 +11,13 @@ public class CrowdSystem : MonoBehaviour
     [SerializeField] private float _radius = 2;
     [SerializeField] private float _angle = 137.508f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
         PlaceRunners();
     }
 
+    //TODO Place Runners when some Action happens
     private void PlaceRunners()
     {
         for(int i = 0; i < _runnersParent.childCount; i++)
