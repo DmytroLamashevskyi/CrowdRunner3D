@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Elements")]
+    [SerializeField] private CrowdSystem _crowdSystem;
+    [SerializeField] private float _roadWidth;
+
     [Header("Settings")]
     [SerializeField]
     private float _moveSpeed = 3f;
@@ -45,6 +49,9 @@ public class PlayerController : MonoBehaviour
 
             Vector3 position = transform.position;
             position.x = _clickedPlayerPosition.x + xScreenDifference;
+
+            position.x = Mathf.Clamp(position.x, -_roadWidth / 2 + _crowdSystem.GetRadius(), _roadWidth / 2 - +_crowdSystem.GetRadius());
+
             transform.position = position;
         }
     }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,5 +34,11 @@ public class CrowdSystem : MonoBehaviour
         var x = _radius * Mathf.Sqrt(index) * Mathf.Cos(Mathf.Deg2Rad * index * _angle);
         var z = _radius * Mathf.Sqrt(index) * Mathf.Sin(Mathf.Deg2Rad * index * _angle);
         return new Vector3(x, 0, z);
+    }
+
+
+    public float GetRadius()
+    {
+        return _radius * Mathf.Sqrt(_runnersParent.childCount);
     }
 }
