@@ -9,7 +9,7 @@ public class Chunk : MonoBehaviour
 
     public float GetLength()
     {
-        return _size.x;
+        return _size.z;
     }
 
     private void OnDrawGizmos()

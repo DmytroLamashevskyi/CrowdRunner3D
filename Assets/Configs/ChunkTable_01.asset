@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa45f4128434b04ca1d887ac6bcbd8c, type: 3}
+  m_Name: ChunkTable_01
+  m_EditorClassIdentifier: 
+  entries:
+  - prefab: {fileID: 8681175751092039771, guid: a6b018910fe82684e8d99c73ed788589,
+      type: 3}
+    weight: 5
+    tag: 0
+    maxConsecutiveTag: 1
+    allowImmediateRepeat: 0
+  - prefab: {fileID: 3483437812209070697, guid: 403801e382141e049a30662c23c0efca,
+      type: 3}
+    weight: 3
+    tag: 2
+    maxConsecutiveTag: 1
+    allowImmediateRepeat: 0
+  - prefab: {fileID: 7827993958673820412, guid: d9cbdeb250803774296c9f151c40b97c,
+      type: 3}
+    weight: 1
+    tag: 2
+    maxConsecutiveTag: 1
+    allowImmediateRepeat: 0
+  - prefab: {fileID: 3555106989968149990, guid: d4ccd2ac0e880904795df95c34cd5ba4,
+      type: 3}
+    weight: 90
+    tag: 0
+    maxConsecutiveTag: 0
+    allowImmediateRepeat: 1
